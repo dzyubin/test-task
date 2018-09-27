@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.3",
+    "get-hrefs": "^2.0.0",
+    "htmlparser": "^1.7.7",
     "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-table-next": "^1.1.4",
+    "react-bootstrap-table2-filter": "^1.0.0",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5"
   },
