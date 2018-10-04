@@ -2,19 +2,6 @@ import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory from 'react-bootstrap-table2-filter'
 
-const data = {
-  columns: [{ // has N elements (N columns)
-    type: ["string"/"number"],
-    filtering: [true/false], // has filtering input
-    sorting: [true/false], // has sorting arrows
-    style: {} // css styles
-  }],
-  cells: [{  // has M*N elements (M rows)
-    value: 'any_value', // any value
-    style: {} // total cell style is merge with column style and cell (style = {...columns[i].style, ...cells[i*j].style})
-  }]
-};
-
 export default (tableData) => {
   const { columns, cells } = tableData.data;
 
@@ -50,3 +37,18 @@ const formatProductsArray = cells => {
 
   return products
 }
+
+/*
+const data = {
+  columns: [{ // has N elements (N columns)
+    type: ["string"/"number"],
+    filtering: [true/false], // has filtering input
+    sorting: [true/false], // has sorting arrows
+    style: {} // css styles
+  }],
+  cells: [{  // has M*N elements (M rows)
+    value: 'any_value', // any value
+    style: {} // total cell style is merge with column style and cell (style = {...columns[i].style, ...cells[i*j].style})
+  }]
+};
+*/

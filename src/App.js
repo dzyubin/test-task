@@ -25,25 +25,20 @@ class App extends Component {
           style: {
             backgroundColor: "#11E29B",
             color: "white"
+          },
+          sort: true,
+          sortFunc: (a, b, order) => {
+            if (order === 'asc') {
+              return parseFloat(b) - parseFloat(a);
+            }
+
+            return parseFloat(a) - parseFloat(b);
           }
         }
       ],
       cells: generateProductsArray()
     };
 
-    console.log(generateProductsArray())
-
-    const columns = [{
-      dataField: 'id',
-      text: 'Product ID',
-      sort: true
-    }, {
-      dataField: 'name',
-      text: 'Product Name'
-    }, {
-      dataField: 'price',
-      text: 'Product Price'
-    }];
     return (
       <div className="App">
         <header className="App-header">
@@ -65,7 +60,7 @@ export default App;
 
 const generateProductsArray = () => {
   let products = []
-  for ( let i = 1; i < 50; i++ ) {
+  for ( let i = 1; i < 51; i++ ) {
     products.push({
       id: i
     })
