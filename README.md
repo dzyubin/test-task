@@ -5,7 +5,7 @@
 1. npm start
 2. http://localhost:3001 (PORT is set in .env)
 
-## NodeJS
+## NodeJS (not finished)
 
 node node.js \<url> \<searchDepth> \<searchPhrase>
 
