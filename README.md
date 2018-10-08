@@ -1,13 +1,13 @@
 # SkySoft Test Task
 
-## ReacJS
+## ReactJS
 
 1. npm start
 2. http://localhost:3001 (PORT is set in .env)
 
-## NodeJS (not finished)
+## NodeJS
 
-node node.js \<url> \<searchDepth> \<searchPhrase>
+~ node node.js \<url> \<searchPhrase> \<searchDepth>
 
 
 ---

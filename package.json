@@ -11,7 +11,8 @@
     "react-bootstrap-table-next": "^1.1.4",
     "react-bootstrap-table2-filter": "^1.0.0",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "table": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
